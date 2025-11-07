@@ -378,20 +378,27 @@ body {
     min-height: 100vh;
 }
 
+.list-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Space between header and social links */
+    z-index: 100;
+}
+
 /* Header Styles */
 .header {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    z-index: 100;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .crest {
-    width: 120px;
+    width: 200px;
     height: auto;
     margin-bottom: 10px;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
@@ -423,10 +430,6 @@ body {
 
 /* 16-bit Character Select Screen */
 .social-links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
